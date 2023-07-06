@@ -125,8 +125,6 @@ INSERT INTO shipping VALUES(9,129,'2023-11-30',"ashish"," not reached");
 INSERT INTO shipping VALUES(10,210,'2023-12-20',"Nitin","reached");
 SELECT * FROM shipping;
 
-UPDATE shipping SET order_id=134 WHERE  Id=1;
-DELETE FROM  shipping WHERE order_id=122;
 -- AND OPERATOR --
 SELECT * FROM shipping WHERE  order_id=121 AND Id=1;
 SELECT * FROM shipping WHERE  order_id=134 AND Id=3;
