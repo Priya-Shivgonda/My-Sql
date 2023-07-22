@@ -1,0 +1,69 @@
+SQL TEST
+ 
+ 
+ 1.Create a database
+ 
+ 
+ syatax:
+   CREATE DATABASE database_name;
+   
+ 2 .create  a table
+ 
+    syatax:
+	CREATE TABLE table_name(datatype column_name);
+
+3.add column to existing table	
+   
+   syntax:
+   ALTER TABLE table_name ADD column_name data_type [constraints];
+   
+   
+ 4. drop column
+ syntax:
+   ALTER TABLE table_name DROP COLUMN column_name;
+   
+ 5. 
+ 
+ ALTER TABLE current_table_name RENAME TO new_table_name;
+ 
+ 6.
+ syatax:
+ 
+ LTER TABLE table_name ALTER COLUMN column_name new_data_type;
+ 
+ 7.
+   syntax:
+   UPDATE table_name SET column1 = value1, column2 = value2, ... 
+   WHERE condition;
+   
+ 8.
+ syntax:
+ DELETE FROM table_name  WHERE condition;
+ 
+ 
+ 9  CHARINDEX(search_string, source_string);
+ 
+ 
+ 10. Aggregate functions:
+     count:
+	 SELECT COUNT(column_name) FROM table_name WHERE condition;
+	 
+	 sum:
+	 SELECT SUM(column_name) FROM table_name WHERE condition;
+	 
+	 Avg:
+	 SELECT AVG(column_name) FROM table_name WHERE condition;
+	 
+	 Max:
+	 SELECT MAX(column_name) FROM table_name WHERE condition;
+	 
+	 groupby:
+	 SELECT column_name, AGGREGATE_FUNCTION(column_name) FROM table_name GROUP BY column_name;
+	 
+	 
+	 having by:
+	 SELECT column1, column2, ..., aggregate_function(columnX) FROM table_name GROUP BY column1, column2, ...;
+	 
+	 
+	 orderby 
+	 SELECT column1, column2, ... FROM table_name ORDER BY column1 [ASC|DESC], column2 [ASC|DESC], ...;
